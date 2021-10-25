@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Рекорды и запись</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/LocalStorageLogic.js"></script>
+</head>
+
+<body>
+    <h1 class="record-header">
+      RECORD TABLE
+    </h1>
+    <div>
+        <p class="record-paragraph">
+          FILL THE DATA
+        </p>
+        <table style="width:200px;" id="tbl" align="center">
+            <tr>
+                <td class="record-name">
+                  Name
+                </td>
+                <td>
+                    <input id="txtpname" type="text" class="record-input" />
+                </td>
+            </tr>
+            <tr>
+                <td class="record-date">
+                  Date
+                </td>
+                <td>
+                    <input type="date" id="txtpaddr" class="record-input" />
+                </td>
+            </tr>
+            <tr>
+                <td class="record-score">
+                  Score
+                </td>
+                <td>
+                    <input id="txtpcity" type="text" class="record-input"/>
+                </td>
+            </tr>
+        </table>
+        <p>
+            <input id="btnsave" type="button" value="Safe" class="record-safe-button" />
+            <input id="btnclear" type="button" value="Clear fields" class="record-clear-button" />
+            <input id="btnclearstorage" type="button" value="Clear records" class="record-clear-storage-button" />
+        </p>
+        <a href="index.html" class="record-link">
+          Back to Game!
+        </a>
+    </div>
+    <div id="dvcontainer"></div>
+</body>
+</html>
